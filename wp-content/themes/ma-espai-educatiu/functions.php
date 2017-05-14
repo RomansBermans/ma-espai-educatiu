@@ -263,15 +263,15 @@ function twentyseventeen_fonts_url() {
 
 	/**
 	 * Translators: If there are characters in your language that are not
-	 * supported by Libre Franklin, translate this to 'off'. Do not translate
+	 * supported by Lato, translate this to 'off'. Do not translate
 	 * into your own language.
 	 */
-	$libre_franklin = _x( 'on', 'Libre Franklin font: on or off', 'twentyseventeen' );
+	$lato = _x( 'on', 'Lato font: on or off', 'twentyseventeen' );
 
-	if ( 'off' !== $libre_franklin ) {
+	if ( 'off' !== $lato ) {
 		$font_families = array();
 
-		$font_families[] = 'Libre Franklin:300,300i,400,400i,600,600i,800,800i';
+		$font_families[] = 'Lato:400,700';
 
 		$query_args = array(
 			'family' => urlencode( implode( '|', $font_families ) ),
@@ -455,6 +455,9 @@ function twentyseventeen_scripts() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+
+	// Load style overrides
+	wp_enqueue_style( 'twentyseventeen-style-overrides', get_theme_file_uri( '/style.overrides.css' ), array( 'twentyseventeen-style' ), '1.0' );
 }
 add_action( 'wp_enqueue_scripts', 'twentyseventeen_scripts' );
 
