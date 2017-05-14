@@ -34,6 +34,8 @@
 						?>
 					</nav><!-- .social-navigation -->
 				<?php endif;
+				
+				// ORIGINAL: get_template_part( 'template-parts/footer/site', 'info' );
 
 				?>
 			</div><!-- .wrap -->
