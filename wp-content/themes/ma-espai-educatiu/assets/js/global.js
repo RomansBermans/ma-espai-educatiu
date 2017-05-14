@@ -87,6 +87,7 @@
 
 	// Set margins of branding in header.
 	function adjustHeaderHeight() {
+		/* ORIGINAL:
 		if ( 'none' === $menuToggle.css( 'display' ) ) {
 
 			// The margin should be applied to different elements on front-page or home vs interior pages.
@@ -100,6 +101,7 @@
 			$customHeader.css( 'margin-bottom', '0' );
 			$branding.css( 'margin-bottom', '0' );
 		}
+		*/
 	}
 
 	// Set icon for quotes.

@@ -22,6 +22,7 @@ textarea {
 
 
 .navigation-top {
+	z-index: 1;
 	background: none;
 	border-bottom: none;
 	border-top: none;
@@ -48,6 +49,14 @@ body:not(.twentyseventeen-front-page) .entry-header {
 	max-width: 1000px;
 }
 
+.custom-header-media:before {
+	content: unset;
+}
+
+
+.site-footer {
+	border-top: none;
+}
 
 .site-footer .wrap {
 	padding-bottom: 0;
@@ -73,6 +82,11 @@ body:not(.twentyseventeen-front-page) .entry-header {
 	width: 100%;
 }
 
+.panel-content .wrap {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
 
 @media screen and (min-width: 30em) {
 	.page-one-column .panel-content .wrap {
@@ -82,6 +96,20 @@ body:not(.twentyseventeen-front-page) .entry-header {
 
 
 @media screen and (min-width: 48em) {
+	.twentyseventeen-front-page.has-header-image .custom-header-media, 
+	.twentyseventeen-front-page.has-header-video .custom-header-media, 
+	.home.blog.has-header-image .custom-header-media, 
+	.home.blog.has-header-video .custom-header-media {
+		height: auto;
+	}
+
+	.has-header-image.twentyseventeen-front-page .site-branding, 
+	.has-header-video.twentyseventeen-front-page .site-branding, 
+	.has-header-image.home.blog .site-branding, 
+	.has-header-video.home.blog .site-branding {
+		position: relative;
+	}
+
 	.navigation-top {
 		bottom: auto;
 		left: auto;
