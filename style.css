@@ -400,6 +400,10 @@ body:not(.home) .site-content-contain #content {
 		font-size: 24px;
 	}
 
+	.site-header .navigation-top .menu-toggle .icon {
+		margin: 0;
+	}
+
 	.site-header .navigation-top .main-navigation.toggled-on > div > ul {
 		padding: 0;
     	margin: 6em 0 0 0;
