@@ -5,8 +5,11 @@
 
 
 
-.site-header .navigation-top li a {
+.site-header .navigation-top li {
 	color: #aaa;
+}
+.site-header .navigation-top li a {
+	color: inherit;
 }
 .site-header .navigation-top .current-menu-item > a, 
 .site-header .navigation-top .current_page_item > a {
@@ -14,7 +17,7 @@
 }
 
 
-.home .site-header .navigation-top li a {
+.home .site-header .navigation-top li {
 	color: #000;
 }
 .home .site-header .navigation-top .current-menu-item > a, 
@@ -23,7 +26,7 @@
 }
 
 
-.color-1 .site-header .navigation-top li a {
+.color-1 .site-header .navigation-top li {
 	color: rgb(249, 170, 138);
 }
 .color-1 .site-header .navigation-top .current-menu-item > a, 
@@ -36,7 +39,7 @@
 }
 
 
-.color-2 .site-header .navigation-top li a {
+.color-2 .site-header .navigation-top li {
 	color: rgb(242, 212, 141);
 }
 .color-2 .site-header .navigation-top .current-menu-item > a, 
@@ -49,7 +52,7 @@
 }
 
 
-.color-3 .site-header .navigation-top li a {
+.color-3 .site-header .navigation-top li {
 	color: rgb(175, 204, 204);
 }
 .color-3 .site-header .navigation-top .current-menu-item > a, 
@@ -62,7 +65,7 @@
 }
 
 
-.color-4 .site-header .navigation-top li a {
+.color-4 .site-header .navigation-top li {
 	color: rgb(180, 213, 180);
 }
 .color-4 .site-header .navigation-top .current-menu-item > a, 
@@ -75,7 +78,7 @@
 }
 
 
-.color-5 .site-header .navigation-top li a {
+.color-5 .site-header .navigation-top li {
 	color: rgb(146, 209, 195);
 }
 .color-5 .site-header .navigation-top .current-menu-item > a, 
@@ -88,7 +91,7 @@
 }
 
 
-.color-6 .site-header .navigation-top li a {
+.color-6 .site-header .navigation-top li {
 	color: rgb(242, 200, 205);
 }
 .color-6 .site-header .navigation-top .current-menu-item > a, 
@@ -101,7 +104,7 @@
 }
 
 
-.color-7 .site-header .navigation-top li a {
+.color-7 .site-header .navigation-top li {
 	color: rgb(220, 186, 219);
 }
 .color-7 .site-header .navigation-top .current-menu-item > a, 
@@ -135,7 +138,7 @@ button,
 input,
 select,
 textarea {
-	font-size: 20px;
+	font-size: 18px;
 }
 
 
@@ -164,6 +167,16 @@ textarea {
 
 .site-header .navigation-top li {
 	display: block;
+}
+
+.site-header .navigation-top li.lang-item {
+	display: inline-block;
+	margin-right: 4px;
+}
+
+.site-header .navigation-top li.lang-item-ca:before {
+	margin-right: 4px;
+	content: 'Idioma / Language: ';
 }
 
 .site-header .navigation-top li a {
@@ -298,6 +311,10 @@ body:not(.home) .site-content-contain #content {
 	display: none;
 }
 
+.page .site-content .entry-header .edit-link {
+	display: none;
+}
+
 .site-content .entry-content img {
 	width: 100%;
 }
@@ -373,12 +390,13 @@ body:not(.home) .site-content-contain #content {
 	.site-header .navigation-top .menu-toggle {
 		margin: 0;
 		padding: 0;
-		font-size: 28px;
+		font-size: 24px;
 		display: inline-block;
-		width: 30px;
+		width: 26px;
 		overflow: hidden;
-		height: 42px;
+		height: 36px;
 		outline: none;
+		font-weight: normal
 	}
 
 	.site-header .navigation-top .main-navigation.toggled-on > div > ul {
