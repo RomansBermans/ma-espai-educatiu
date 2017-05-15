@@ -390,13 +390,14 @@ body:not(.home) .site-content-contain #content {
 	.site-header .navigation-top .menu-toggle {
 		margin: 0;
 		padding: 0;
-		font-size: 24px;
+		font-size: 0;
 		display: inline-block;
-		width: 26px;
-		overflow: hidden;
-		height: 36px;
 		outline: none;
-		font-weight: normal
+		font-weight: normal;
+	}
+
+	.site-header .navigation-top .menu-toggle svg {
+		font-size: 24px;
 	}
 
 	.site-header .navigation-top .main-navigation.toggled-on > div > ul {
