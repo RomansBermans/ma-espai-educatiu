@@ -144,7 +144,7 @@ textarea {
 
 
 .site-header {
-	padding: 6em 3em 0 3em;
+	padding: 6em 6em 0 6em;
 	display: flex;
     flex-direction: row-reverse;
 	background-color: rgb(252, 252, 249);
@@ -171,12 +171,14 @@ textarea {
 
 .site-header .navigation-top li.lang-item {
 	display: inline-block;
-	margin-right: 4px;
 }
 
-.site-header .navigation-top li.lang-item-ca:before {
-	margin-right: 4px;
-	content: 'Idioma / Language: ';
+.site-header .navigation-top li.lang-item:not(:last-child):after {
+	content: ' /';
+}
+
+.site-header .navigation-top li.lang-item.current-lang a {
+	text-decoration: underline;
 }
 
 .site-header .navigation-top li a {
@@ -211,12 +213,12 @@ textarea {
 	margin: 0;
 }
 
-.site-header .navigation-top li a {
-	padding: 0;
+.site-header .navigation-top li:not(:last-child) {
+	margin-bottom: 0.2em;
 }
 
-.site-header .navigation-top li:not(:last-child) a {
-	margin-bottom: 0.4em;
+.site-header .navigation-top li a {
+	padding: 0;
 }
 
 .site-header .navigation-top .menu-scroll-down {
@@ -239,7 +241,7 @@ textarea {
 
 .site-header .custom-header .site-branding .wrap {
 	position: fixed !important;
-    padding-left: 68px;
+    padding-left: 46px;
 }
 
 .site-header .custom-header .site-branding .wrap .custom-logo-link {
@@ -304,7 +306,8 @@ body:not(.home) .site-content-contain #content {
 	background-color: rgb(252, 252, 249);
 	padding-top: 6em;
 	padding-bottom: 4.5em;
-	padding-right: 10.25em;
+	padding-right: 302px;
+	padding-left: 6em;
 }
 
 .page .site-content .entry-header {
@@ -368,8 +371,8 @@ body:not(.home) .site-content-contain #content {
 	}
 
 	.site-content .wrap {
-		padding-right: 3em;
-		padding-left: 3em;
+		padding-right: 6em;
+		padding-left: 6em;
 	}
 }
 
@@ -385,6 +388,14 @@ body:not(.home) .site-content-contain #content {
 	.home.blog.has-header-image .custom-header-media, 
 	.home.blog.has-header-video .custom-header-media {
 		display: none;
+	}
+
+	.site-header {
+		padding: 3em 3em 0 3em;
+	}
+
+	.site-header .custom-header {
+		margin-bottom: 3em !important;
 	}
 
 	.site-header .navigation-top .menu-toggle {
@@ -406,12 +417,12 @@ body:not(.home) .site-content-contain #content {
 
 	.site-header .navigation-top .main-navigation.toggled-on > div > ul {
 		padding: 0;
-    	margin: 6em 0 0 0;
+    	margin: 3em 0 0 0;
 		border: none;
 	}
 
 	.home .site-header .navigation-top .main-navigation.toggled-on > div > ul {
-		margin-bottom: 6em;
+		margin-bottom: 3em;
 	}
 
 	.site-header .navigation-top .main-navigation.toggled-on > div > ul > li {
@@ -434,6 +445,10 @@ body:not(.home) .site-content-contain #content {
 		letter-spacing: initial;
 		text-transform: initial;
 	}
+
+	.site-content .wrap {
+		padding: 3em 3em 1.5em 3em;
+	}
 }
 
 
@@ -445,7 +460,6 @@ body:not(.home) .site-content-contain #content {
 
 	.site-header .custom-header {
 		align-self: center;
-		margin-bottom: 6em !important;
 	}
 
 	.site-header .navigation-top .wrap nav {
@@ -457,7 +471,7 @@ body:not(.home) .site-content-contain #content {
 
 @media screen and (max-width: 480px) {
 	.site-header {
-		padding: 3em 1em 0 1em;
+		padding: 3em 1.5em 0 1.5em;
 	}
 
 	.site-header .custom-header {
@@ -473,6 +487,6 @@ body:not(.home) .site-content-contain #content {
 	}
 
 	.site-content .wrap {
-		padding: 3em 1em 1.5em 1em;
+		padding: 3em 1.5em 1.5em 1.5em;
 	}
 }
