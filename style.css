@@ -256,7 +256,7 @@ textarea {
 
 .site-header .custom-header .site-branding .wrap {
 	position: fixed !important;
-    padding-left: 46px;
+  padding-left: 46px;
 }
 
 .site-header .custom-header .site-branding .wrap .custom-logo-link {
@@ -435,12 +435,12 @@ body:not(.home) .site-content-contain #content {
 
 	.site-header .navigation-top .main-navigation.toggled-on > div > ul {
 		padding: 0;
-    margin: 3em 0 0 0;
+    margin: 1.5em 0 0 0;
 		border: none;
 	}
 
 	.home .site-header .navigation-top .main-navigation.toggled-on > div > ul {
-		margin-bottom: 3em;
+		margin-bottom: 1.5em;
 	}
 
 	.site-header .navigation-top .main-navigation.toggled-on > div > ul > li {
@@ -453,10 +453,6 @@ body:not(.home) .site-content-contain #content {
 		width: auto;
 	}
 
-	.page:not(.home) .site-content .entry-header {
-		display: block;
-	}
-
 	.page:not(.home) .site-content .entry-header h1 {
 		font-size: inherit;
 		font-weight: normal;
@@ -465,7 +461,7 @@ body:not(.home) .site-content-contain #content {
 	}
 
 	.site-content .wrap {
-		padding: 3em 3em 1.5em 3em;
+		padding: 2em 3em 1.5em 3em;
 	}
 }
 
@@ -505,15 +501,15 @@ body:not(.home) .site-content-contain #content {
 	}
 
 	.site-header .navigation-top .main-navigation.toggled-on > div > ul {
-    	margin: 3em 0 0 0;
+    	margin: 1.5em 0 0 0;
 	}
 
 	.home .site-header .navigation-top .main-navigation.toggled-on > div > ul {
-		margin-bottom: 3em;
+		margin-bottom: 1.5em;
 	}
 
 	.site-content .wrap {
-		padding: 3em 1.5em 1.5em 1.5em;
+		padding: 2em 1.5em 1.5em 1.5em;
 	}
 
   [class*=" color-"] .entry-content {
